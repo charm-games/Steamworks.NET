@@ -5,6 +5,8 @@
 //
 // Version: 1.0.5
 
+#if !UNITY_PS4
+
 using UnityEngine;
 using System.Collections;
 using Steamworks;
@@ -150,3 +152,5 @@ public class SteamManager : MonoBehaviour {
 		SteamAPI.RunCallbacks();
 	}
 }
+
+#endif // !UNITY_PS4
